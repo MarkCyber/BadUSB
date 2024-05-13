@@ -1,6 +1,7 @@
 REM This script was created by github.com/MarkCyber
 REM This script is intended to act as a simulation of a ransomware attack
 REM This script will change file extensions to .locked rather than encrypting the files
+REM This script will also display a simulated encrypted message
 
 DELAY 500
 GUI r
