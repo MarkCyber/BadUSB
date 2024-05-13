@@ -1,4 +1,6 @@
-REM This Script Is To Revert All Changes From The RansomwareSimulation Script
+REM This script was created by github.com/MarkCyber
+REM This is a follow-up script to the RansomwareSimulation
+REM This script is to revert all changes from the RansomwareSimulation script
 
 DELAY 500
 GUI r
