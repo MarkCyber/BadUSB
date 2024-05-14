@@ -2,24 +2,20 @@ REM This script was created by github.com/MarkCyber
 REM This is a follow-up script to the RansomwareSimulation
 REM This script is to revert all changes from the RansomwareSimulation script
 
-DELAY 1000
+DELAY 500
 GUI r
-DELAY 2000
+DELAY 100
 STRING powershell -Command "Start-Process powershell -Verb runAs"
 ENTER
-DELAY 2000
+DELAY 500
 ALT y
-DELAY 2000
+DELAY 500
 
-REM Attempt to re-enable Task Manager, proceed regardless of the outcome
-STRING $regPath = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\System'; $regName = 'DisableTaskMgr'; Set-ItemProperty -Path $regPath -Name $regName -Value 0
-ENTER
-DELAY 2000
-
-REM Revert file renamings, continue regardless of previous success
+REM Revert file renamings in specified locations, removing .locked from all files
 STRING $locations = @('MyDocuments', 'Desktop', 'Pictures', 'Music'); foreach ($loc in $locations) { $path = [Environment]::GetFolderPath($loc); Get-ChildItem -Path $path -File | Where-Object { $_.Extension -eq '.locked' } | Rename-Item -NewName {$_.Name.Replace('.locked', '')} }
 ENTER
-DELAY 2500
+DELAY 1000
 
 STRING exit
 ENTER
+
