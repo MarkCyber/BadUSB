@@ -10,4 +10,5 @@ This script simulates a ransomware attack. Run this script by plugging in the fl
 # RansomwareSimulationCleanup:
 This script is fairly self explanatory. It is a cleanup script to revert all changes made by the RansomwareSimulation script mentioned above. This should be ran after the RansomwareSimulation script to rename all file extensions back to their original names.
 
-
+# EmailSender:
+This script is also fairly self explanatory. It opens up chrome and navigates to gmail (the account must be logged in), and then composes an email and sends it to a destination that you choose. You must actually type the email address and contents onto the script before this can be used. You can use this to automate emails. You can copy and paste the same script over and over in the same .txt file to send it to many emails at once. You can also use python if you have a massive amount of email addresses/names to automate this further. I can provide a python script for this if I get enough requests. Enjoy.
