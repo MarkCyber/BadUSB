@@ -1,4 +1,5 @@
 # BadUSB
+--------------------
 All of these scripts are for educational purposes only and not intended to be used for any malicious purposes. This is to act as a library showcasing my progress more than anything. If someone is to use any of these scripts, it is essential to have prior consent from all parties involved. Many of these scripts I have created have been improved upon using ai programs. I will not be held responsible for any actions taken using any of the scripts mentioned below:
 
 ## CredentialHarvester:
