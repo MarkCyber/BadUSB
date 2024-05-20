@@ -1,5 +1,11 @@
-REM This script was created by github.com/MarkCyber
-REM This script simulates a ransomware attack by renaming files and displaying a message.
+REM %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+REM %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+REM %%%%%%%%%%%%%                      This script was created by github.com/MarkCyber                               %%%%%%%%%%%%%%
+REM %%%%%%%%%%%%%    This script simulates a ransomware attack by changing file extensions and displays a message    %%%%%%%%%%%%%%
+REM %%%%%%%%%%%%%       Renaming file extensions renders each file unusable until the proper extension is added      %%%%%%%%%%%%%%
+REM %%%%%%%%%%%%%        Run (1.1)RansomwareSimulationCleanup to revert the changes and renaming of extensions       %%%%%%%%%%%%%%
+REM %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+REM %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 DELAY 1000
 GUI r
 DELAY 1000
