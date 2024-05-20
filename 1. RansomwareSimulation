@@ -9,6 +9,7 @@ REM %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 DELAY 1000
 GUI r
 DELAY 1000
+REM opens powershell (this is for windows machines)
 STRING powershell
 ENTER
 DELAY 3000
