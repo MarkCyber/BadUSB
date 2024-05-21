@@ -16,3 +16,7 @@ This script is also fairly self explanatory. It opens up chrome and navigates to
 
 ## EmailScriptGenerator.py:     
 This is a python script to automatically create BadUSB scripts to auto send emails. This is similar to the EmailSender badUSB script, except this auto generates many emailsender badusb scripts to change emails and names based on an excel sheet with this information. This takes a excel sheet with the columns named "Names" and "Emails" and will then make a badusb script using the name + email of each person. There are various subject options that will be chosen from, to minimize "spam" detection if possible. If you want to keep the same subject for all emails, just paste the same thing to all 7 subject placeholders. Change the contents of the email to what you want to send and the signature to your name. This can be very useful in a business setting.
+
+## VulnerabilityScanner:
+This is a script intended to be ran by a flipper zero, utilizing a secondary USB for all results to be saved onto. This script will scan for vulnerabilities by the means of checking for outdated software, open ports, firewall and antivirus statuses, smbv1 status, network services, password and audit policies, and more. Then, this script will check for any CVEs that could be found and will save a results.txt file on the secondary USB in a folder with the PC name of the target machine being scanned. Logs will will also be saved onto that USB for further analysis if necessary.
+
