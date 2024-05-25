@@ -4,7 +4,7 @@ REM %%%%%%%%%%%%                    This script was created by github.com/MarkCy
 REM %%%%%%%%%%%%        This script is intended to send an email via badUSB (into your logged in gmail on chrome)    %%%%%%%%%%%%
 REM %%%%%%%%%%%%   This script will open chrome, send an email, and then close chrome. Must be logged in to email    %%%%%%%%%%%%
 REM %%%%%%%%%%%%      You can use python to replicate this script by changing email addresses & name every time      %%%%%%%%%%%%
-REM %%%%%%%%%%%%      The python script in this folder generates badusb scripts for multiple emails if need be       %%%%%%%%%%%%
+REM %%%%%%%%%%%%       The python script in this folder generates badusb scripts for multiple emails if need be      %%%%%%%%%%%%
 REM %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 REM %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 DELAY 1000
